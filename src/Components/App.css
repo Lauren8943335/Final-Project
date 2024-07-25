@@ -1,40 +1,11 @@
-
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-
-
-div {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
-
-.todoitem {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
- }
- .todoitem p {
-  color: #888;
-  text-decoration: line-through;
- }
- 
- :root {
-  color-scheme: light;
+*{color:aqua}
+:root {
+  background-color: rebeccapurple;
   --border: rgba(0, 0, 0, 0.2);
   --todoHover: rgba(0, 0, 0, 0.05);
   --status: #cfd6ea;
   --inputBg: rgba(0, 0, 0, 0.05);
-  --addButtonColor: rgb(138, 39, 39);
+  --addButtonColor: rgba(255, 255, 255, 1);
   --addButtonColorHover: rgba(255, 255, 255, 1);
   --addButtonBg: rgba(101, 164, 126, 0.75);
   --addButtonBgHover: rgba(101, 164, 126, 1);
@@ -62,7 +33,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  padding: 2rem;
+  padding: 5rem;
+  text-align: center;
+  align-items: center;
 }
 
 h1 {
@@ -138,8 +111,8 @@ h1 {
 
 .btn--add:disabled,
 .btn--add:disabled:hover {
-  color: #8f8f8f;
-  background: #292929;
+  color: #840dcd;
+  background: #12bbce;
   cursor: not-allowed;
 }
 
@@ -149,7 +122,7 @@ h1 {
 }
 
 .btn-delete {
-  color: #f45b69;
+
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -166,14 +139,16 @@ h1 {
 }
 
 .delete-icon {
-  width: 1em;
-  height: 1em;
+  width: 4em;
+  height: 4em;
 }
 
 .field {
   display: flex;
-  width: 100%;
+  width: 90%;
   margin-bottom: 2rem;
+  margin-left: 5rem,
+
 }
 
 input {
@@ -181,7 +156,7 @@ input {
   border: 1px solid transparent;
   background: var(--inputBg);
   border-radius: 0.25rem;
-  width: 10%;
+  width: 100%;
   font-size: 1rem;
   transition: ease 0.3s;
   padding: 0.25rem 0.5rem;
